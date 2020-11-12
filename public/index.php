@@ -1,3 +1,37 @@
+<?php 
+
+require_once("../private/initialize.php");
+
+
+///we checked the user request method
+if (isPostRequst()) {
+  // collect user inputs
+    $user=[];
+    $user['name'] = $_POST['name'];
+    $user['email'] = $_POST['email'];
+    $user['subject'] = $_POST['subject'];
+    $user['message'] = $_POST['message'];
+
+//validate user inputs 
+$errors = validateUserInput($user);
+ //redirect error message to the homepage
+
+
+
+//we send user inputs to database
+
+
+
+// redirct user to homepage with a message
+
+}
+
+
+
+?>
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -587,35 +621,34 @@
 
           </div>
 
+          
           <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
-            <form action="../private/contact.php" method="post" role="form" class="php-email-form">
+          <!-- class="php-email-form" -->
+          <?php  echo display_errors($errors)?>
+            <form action="index.php" method="POST" >
               <div class="form-row">
                 <div class="form-group col-md-6">
                   <label for="name">Your Name</label>
-                  <input type="text" name="name" class="form-control" id="name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
-                  <div class="validate"></div>
+                  <input type="text" name="name" class="form-control"  />
+                
                 </div>
                 <div class="form-group col-md-6">
                   <label for="name">Your Email</label>
-                  <input type="email" class="form-control" name="email" id="email" data-rule="email" data-msg="Please enter a valid email" />
-                  <div class="validate"></div>
+                  <input type="email" class="form-control" name="email" />
+                 
                 </div>
               </div>
               <div class="form-group">
                 <label for="name">Subject</label>
-                <input type="text" class="form-control" name="subject" id="subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
-                <div class="validate"></div>
+                <input type="text" class="form-control" name="subject" />
+                
               </div>
               <div class="form-group">
                 <label for="name">Message</label>
-                <textarea class="form-control" name="message" rows="10" data-rule="required" data-msg="Please write something for us"></textarea>
-                <div class="validate"></div>
+                <textarea class="form-control" name="message" rows="10" ></textarea>
+               
               </div>
-              <div class="mb-3">
-                <div class="loading">Loading</div>
-                <div class="error-message"></div>
-                <div class="sent-message">Your message has been sent. Thank you!</div>
-              </div>
+              
               <div class="text-center"><button type="submit">Send Message</button></div>
             </form>
           </div>
