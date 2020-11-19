@@ -14,11 +14,33 @@ if (isPostRequst()) {
 
 //validate user inputs 
 $errors = validateUserInput($user);
- //redirect error message to the homepage
+ 
+  $sql = "INSERT INTO contact ";
+  $sql .= "(name,email,subject,Message)";
+  $sql .= "VALUES (";
+  $sql .= "'" . db_escape($db, $user['name']). "',";
+  $sql .= "'" . db_escape($db, $user['email']). "',";
+  $sql .= "'" . db_escape($db, $user['subject']). "',";
+  $sql .= "'" . db_escape($db, $user['message']). "'";
+  $sql .= ")";
 
+  $result = mysqli_query($db, $sql);
+  confirm_result_set($result);
 
+  if($result){
+    //echo "<script> alert('Message Sent Successful') </script>";
+    redirectTo('index.php');
+ 
+  return true;
+   }
 
-//we send user inputs to database
+  else{
+    echo mysqli_error($db);
+    db_disconnect($db);
+    exit;
+  }
+  
+
 
 
 
@@ -104,7 +126,7 @@ $errors = validateUserInput($user);
       <div class="row">
         <div class="col-lg-6 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-2 order-lg-1" data-aos="fade-up" data-aos-delay="200">
           <h1>EAGLON SERVICES NIGERIA</h1>
-          <h2>We are team of talanted Builders and Producer of Home cleaning Chimicals</h2>
+          <h2>We are team of talanted Builders and Producer of Home Cleaning Chemicals</h2>
           <div class="d-lg-flex">
             <a href="#about" class="btn-get-started scrollto">Get Started</a>
             <a href="https://www.youtube.com/watch?v=jDDaplaOz7Q" class="venobox btn-watch-video" data-vbtype="video" data-autoplay="true"> Watch Video <i class="icofont-play-alt-2"></i></a>
@@ -629,23 +651,23 @@ $errors = validateUserInput($user);
               <div class="form-row">
                 <div class="form-group col-md-6">
                   <label for="name">Your Name</label>
-                  <input type="text" name="name" class="form-control"  />
+                  <input type="text" name="name" class="form-control" required  />
                 
                 </div>
                 <div class="form-group col-md-6">
                   <label for="name">Your Email</label>
-                  <input type="email" class="form-control" name="email" />
+                  <input type="email" class="form-control" name="email" required />
                  
                 </div>
               </div>
               <div class="form-group">
                 <label for="name">Subject</label>
-                <input type="text" class="form-control" name="subject" />
+                <input type="text" class="form-control" name="subject" required/>
                 
               </div>
               <div class="form-group">
                 <label for="name">Message</label>
-                <textarea class="form-control" name="message" rows="10" ></textarea>
+                <textarea class="form-control" name="message" rows="10" required></textarea>
                
               </div>
               
@@ -719,6 +741,8 @@ $errors = validateUserInput($user);
         </div>
       </div>
     </div>
+
+    <?php db_disconnect($db) ?>
 
     <div class="container footer-bottom clearfix">
       <div class="copyright">
