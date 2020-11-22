@@ -255,10 +255,19 @@ $errors = validateUserInput($user);
                   <a data-toggle="collapse" href="#accordion-list-3" class="collapsed"><span>03</span>Carpentry Work<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
                   <div id="accordion-list-3" class="collapse" data-parent=".accordion-list">
                     <p>
-                      Carpentry and Roofing Jobs, and Bookkeeping.
+                      Carpentry and Roofing Jobs.
                     </p>
                   </div>
                 </li>
+                <li>
+                  <a data-toggle="collapse" href="#accordion-list-3" class="collapsed"><span>04</span>Bookkeeping<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                  <div id="accordion-list-3" class="collapse" data-parent=".accordion-list">
+                    <p>
+                      Accounting and Bookkeeping Services
+                    </p>
+                  </div>
+                </li>
+
 
               </ul>
             </div>
@@ -534,9 +543,9 @@ $errors = validateUserInput($user);
             <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="100">
               <div class="pic"><img src="assets/img/team/team-1.jpg" class="img-fluid" alt=""></div>
               <div class="member-info">
-                <h4>Walter White</h4>
+                <h4>Njoku Ogbonna Charles</h4>
                 <span>Chief Executive Officer</span>
-                <p>Explicabo voluptatem mollitia et repellat qui dolorum quasi</p>
+                <p>Eaglon Services Nigeria</p>
                 <div class="social">
                   <a href=""><i class="ri-twitter-fill"></i></a>
                   <a href=""><i class="ri-facebook-fill"></i></a>
@@ -551,9 +560,9 @@ $errors = validateUserInput($user);
             <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="200">
               <div class="pic"><img src="assets/img/team/team-2.jpg" class="img-fluid" alt=""></div>
               <div class="member-info">
-                <h4>Sarah Jhonson</h4>
-                <span>Product Manager</span>
-                <p>Aut maiores voluptates amet et quis praesentium qui senda para</p>
+                <h4>Njoku Chinyere Obidiya</h4>
+                <span>Admin. Manager</span>
+                <p>Eaglon Services Nigeria</p>
                 <div class="social">
                   <a href=""><i class="ri-twitter-fill"></i></a>
                   <a href=""><i class="ri-facebook-fill"></i></a>
@@ -568,9 +577,9 @@ $errors = validateUserInput($user);
             <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="300">
               <div class="pic"><img src="assets/img/team/team-3.jpg" class="img-fluid" alt=""></div>
               <div class="member-info">
-                <h4>William Anderson</h4>
-                <span>CTO</span>
-                <p>Quisquam facilis cum velit laborum corrupti fuga rerum quia</p>
+                <h4>Njoku</h4>
+                <span>Accountant</span>
+                <p>Eaglon Services Nigeria</p>
                 <div class="social">
                   <a href=""><i class="ri-twitter-fill"></i></a>
                   <a href=""><i class="ri-facebook-fill"></i></a>
@@ -586,8 +595,8 @@ $errors = validateUserInput($user);
               <div class="pic"><img src="assets/img/team/team-4.jpg" class="img-fluid" alt=""></div>
               <div class="member-info">
                 <h4>Amanda Jepson</h4>
-                <span>Accountant</span>
-                <p>Dolorum tempora officiis odit laborum officiis et et accusamus</p>
+                <span>Site Supervisor</span>
+                <p>Eaglon Services Nigeria</p>
                 <div class="social">
                   <a href=""><i class="ri-twitter-fill"></i></a>
                   <a href=""><i class="ri-facebook-fill"></i></a>
