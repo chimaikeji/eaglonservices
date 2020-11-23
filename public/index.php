@@ -629,23 +629,23 @@ $errors = validateUserInput($user);
               <div class="form-row">
                 <div class="form-group col-md-6">
                   <label for="name">Your Name</label>
-                  <input type="text" name="name" class="form-control"  />
+                  <input type="text" name="name" class="form-control" required />
                 
                 </div>
                 <div class="form-group col-md-6">
                   <label for="name">Your Email</label>
-                  <input type="email" class="form-control" name="email" />
+                  <input type="email" class="form-control" name="email" required/>
                  
                 </div>
               </div>
               <div class="form-group">
                 <label for="name">Subject</label>
-                <input type="text" class="form-control" name="subject" />
+                <input type="text" class="form-control" name="subject" required />
                 
               </div>
               <div class="form-group">
                 <label for="name">Message</label>
-                <textarea class="form-control" name="message" rows="10" ></textarea>
+                <textarea class="form-control" name="message" rows="10" required></textarea>
                
               </div>
               
