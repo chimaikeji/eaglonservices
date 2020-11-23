@@ -14,7 +14,11 @@ if (isPostRequst()) {
 
 //validate user inputs 
 $errors = validateUserInput($user);
- 
+
+
+//insert to the database
+
+if (empty($errors)) {
   $sql = "INSERT INTO contact ";
   $sql .= "(name,email,subject,Message)";
   $sql .= "VALUES (";
@@ -39,6 +43,9 @@ $errors = validateUserInput($user);
     db_disconnect($db);
     exit;
   }
+}
+ 
+  
   
 
 
