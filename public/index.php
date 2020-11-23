@@ -7,10 +7,13 @@ require_once("../private/initialize.php");
 if (isPostRequst()) {
   // collect user inputs
     $user=[];
-    $user['name'] = $_POST['name'];
-    $user['email'] = $_POST['email'];
-    $user['subject'] = $_POST['subject'];
-    $user['message'] = $_POST['message'];
+    $user['name'] = h($_POST['name']);
+    $user['email'] =h($_POST['email']);
+    $user['subject'] = h($_POST['subject']);
+    $user['message'] = h($_POST['message']);
+
+
+   
 
 //validate user inputs 
 $errors = validateUserInput($user);
@@ -19,30 +22,7 @@ $errors = validateUserInput($user);
 //insert to the database
 
 if (empty($errors)) {
-  $sql = "INSERT INTO contact ";
-  $sql .= "(name,email,subject,Message)";
-  $sql .= "VALUES (";
-  $sql .= "'" . db_escape($db, $user['name']). "',";
-  $sql .= "'" . db_escape($db, $user['email']). "',";
-  $sql .= "'" . db_escape($db, $user['subject']). "',";
-  $sql .= "'" . db_escape($db, $user['message']). "'";
-  $sql .= ")";
-
-  $result = mysqli_query($db, $sql);
-  confirm_result_set($result);
-
-  if($result){
-    //echo "<script> alert('Message Sent Successful') </script>";
-    redirectTo('index.php');
- 
-  return true;
-   }
-
-  else{
-    echo mysqli_error($db);
-    db_disconnect($db);
-    exit;
-  }
+    create_new_contact($user);
 }
  
   

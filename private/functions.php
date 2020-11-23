@@ -13,6 +13,10 @@ function redirectTo($location){
     header('location:' . $location);
 }
 
+function h($data){
+  return htmlSpecialChars($data);
+}
+
 
 function display_errors($errors=array()) {
     $output = '';
