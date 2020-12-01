@@ -2,7 +2,19 @@
 require_once("../../private/initialize.php");
 
   
-  $contacts = find_all_contacts();
+ 
+
+ $id = $_GET['id'] ?? 'welcome';
+
+
+ $sql = "SELECT * FROM contact ";
+    $sql .= "WHERE id='". db_escape($db, $id)."'";
+    $sql .= "LIMIT 1";
+    $result = mysqli_query($db, $sql);
+    confirm_result_set($result);
+    $contact=mysqli_fetch_assoc($result);
+      mysqli_free_result($result);
+     
 
   
 
@@ -30,12 +42,10 @@ require_once("../../private/initialize.php");
                 <th>Subject</th>
                 <th>Messages</th>
                 <th>Date</th>
-                <th>&nbsp;</th>
-                <th>&nbsp;</th>
-                <th>&nbsp;</th>
+                
             </tr>
         
-            <?php while($contact = mysqli_fetch_assoc($contacts)) {?>
+            
                 <tr>
                     <td><?php echo h($contact['id']); ?></td>
                     <td><?php echo h($contact['Name']); ?></td>
@@ -43,11 +53,9 @@ require_once("../../private/initialize.php");
                     <td><?php echo h($contact['subject']); ?></td>
                     <td><?php echo h($contact['Message']); ?></td>
                     <td><?php echo h($contact['Date']); ?></td>
-                    <td><a class="action" href="<?php echo url_for('/admin/view.php?id=' . $contact['id']) ;?>">CLICK TO VIEW</a></td>
-                    <td><a class="action" href="<?php echo url_for('/admin/edit.php?id=' . $contact['id']) ;?>">CLICK TO EDIT</a></td>
-                    <td><a class="action" href="<?php echo url_for('/admin/delete.php?id=' . $contact['id']) ;?>">CLICK TO DELETE</a></td>
+                    
                 </tr>
-            <?php } ?>
+             
         </table>
         
 </body>
