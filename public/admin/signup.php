@@ -11,15 +11,9 @@ if (isPostRequst()) {
     $admin["confirmPassword"] = $_POST["confirmPassword"] ?? "";
 
 // validate admin inputs
-$errors = validateAdminInput($admin);
+    create_admin($admin);
 
-
-
-//we hash admin password
-
-
-//we send admin details to database
-
+  
 
 // we redirect the admin to dashboard
 

@@ -27,6 +27,7 @@ require_once("validation.php");
 require_once("database.php");
 require_once('query.php');
 require_once('validationFunctions.php');
+require_once('admin_query.php');
 
 $db = db_connect();
 
