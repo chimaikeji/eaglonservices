@@ -2,7 +2,7 @@
 
 function create_admin($admin){
     global $db;
-
+    $errors = [];
     $errors = validateAdminInput($admin);
 
     // if(!empty($errors)){
