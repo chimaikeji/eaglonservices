@@ -131,27 +131,27 @@ if (empty($errors)) {
         <div class="row" data-aos="zoom-in">
 
           <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
-            <img src="assets/img/clients/client-1.png" class="img-fluid" alt="">
+            <img src="assets/img/clients/client1.png" class="img-fluid" alt="">
           </div>
 
           <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
-            <img src="assets/img/clients/client-2.png" class="img-fluid" alt="">
+            <img src="assets/img/clients/client2.png" class="img-fluid" alt="">
           </div>
 
           <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
-            <img src="assets/img/clients/client-3.png" class="img-fluid" alt="">
+            <img src="assets/img/clients/client3.png" class="img-fluid" alt="">
           </div>
 
           <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
-            <img src="assets/img/clients/client-4.png" class="img-fluid" alt="">
+            <img src="assets/img/clients/client4.png" class="img-fluid" alt="">
           </div>
 
           <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
-            <img src="assets/img/clients/client-5.png" class="img-fluid" alt="">
+            <img src="assets/img/clients/client5.png" class="img-fluid" alt="">
           </div>
 
           <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
-            <img src="assets/img/clients/client-6.png" class="img-fluid" alt="">
+            <img src="assets/img/clients/client-.png" class="img-fluid" alt="">
           </div>
 
         </div>
@@ -186,9 +186,7 @@ if (empty($errors)) {
               background has helped in the growth of Eaglon. Mr. Ogbonna holds a certificate in Accounting
               from Abia State Polytechnic, Aba, a Diploma in Building Construction Technology from “The Ellis
               School of Building, Albany House, Worcester”, and a Bachelor’s Degree in Entrepreneurial & Business
-              Management from National Open University of Nigeria. He has used his accounting skills to set up the
-              company’s chart of accounts, keep company’s financial records, process payroll and file yearly tax
-              clearance with the Nigerian Inland Revenue. Ogbonna’s business management skills has helped the company
+              Management from National Open University of Nigeria. Ogbonna’s business management skills has helped the company
               to manage its building and roofing contracts and other projects. 
             </p>
             <a href="#" class="btn-learn-more">Learn More</a>
@@ -410,7 +408,7 @@ if (empty($errors)) {
           <li data-filter="*" class="filter-active">All</li>
           <li data-filter=".filter-app">Projects</li>
           <li data-filter=".filter-card">Cosmetics</li>
-          <li data-filter=".filter-web">Bricks</li>
+          <li data-filter=".filter-web">Blocks</li>
         </ul>
 
         <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
@@ -428,8 +426,8 @@ if (empty($errors)) {
           <div class="col-lg-4 col-md-6 portfolio-item filter-web">
             <div class="portfolio-img"><img src="assets/img/portfolio/block-1.jpg" class="img-fluid" alt=""></div>
             <div class="portfolio-info">
-              <h4>Bricks</h4>
-              <p>Blocks</p>
+              <h4>Blocks</h4>
+              <p>Block</p>
               <a href="assets/img/portfolio/block-1.jpg" data-gall="portfolioGallery" class="venobox preview-link" title="Web 3"><i class="bx bx-plus"></i></a>
               <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
             </div>
@@ -458,7 +456,7 @@ if (empty($errors)) {
           <div class="col-lg-4 col-md-6 portfolio-item filter-web">
             <div class="portfolio-img"><img src="assets/img/portfolio/block2.jpg" class="img-fluid" alt=""></div>
             <div class="portfolio-info">
-              <h4>Bricks</h4>
+              <h4>Blocks</h4>
               <p>Blockwork</p>
               <a href="assets/img/portfolio/block2.jpg" data-gall="portfolioGallery" class="venobox preview-link" title="Web 2"><i class="bx bx-plus"></i></a>
               <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
@@ -498,7 +496,7 @@ if (empty($errors)) {
           <div class="col-lg-4 col-md-6 portfolio-item filter-web">
             <div class="portfolio-img"><img src="assets/img/portfolio/block1.jpg" class="img-fluid" alt=""></div>
             <div class="portfolio-info">
-              <h4>Bricks</h4>
+              <h4>Blocks</h4>
               <p>block</p>
               <a href="assets/img/portfolio/block1.jpg" data-gall="portfolioGallery" class="venobox preview-link" title="Web 3"><i class="bx bx-plus"></i></a>
               <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
@@ -543,7 +541,7 @@ if (empty($errors)) {
               <div class="pic"><img src="assets/img/team/team-2.jpg" class="img-fluid" alt=""></div>
               <div class="member-info">
                 <h4>Njoku Chinyere Obidiya</h4>
-                <span>Admin. Manager</span>
+                <span>Admin. Assistant / Manager</span>
                 <p>Eaglon Services Nigeria</p>
                 <div class="social">
                   <a href=""><i class="ri-twitter-fill"></i></a>
@@ -559,8 +557,8 @@ if (empty($errors)) {
             <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="300">
               <div class="pic"><img src="assets/img/team/team-3.jpg" class="img-fluid" alt=""></div>
               <div class="member-info">
-                <h4>Njoku</h4>
-                <span>Accountant</span>
+                <h4>Obinna Mbata</h4>
+                <span>Site Supervisor</span>
                 <p>Eaglon Services Nigeria</p>
                 <div class="social">
                   <a href=""><i class="ri-twitter-fill"></i></a>
@@ -577,7 +575,7 @@ if (empty($errors)) {
               <div class="pic"><img src="assets/img/team/team-4.jpg" class="img-fluid" alt=""></div>
               <div class="member-info">
                 <h4>Amanda Jepson</h4>
-                <span>Site Supervisor</span>
+                <span>Accountant</span>
                 <p>Eaglon Services Nigeria</p>
                 <div class="social">
                   <a href=""><i class="ri-twitter-fill"></i></a>
@@ -629,8 +627,7 @@ if (empty($errors)) {
                 <p>+234 803 737 9124,<br>+234 806 520 2392</p>
               </div>
 
-              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621" frameborder="0" style="border:0; width: 100%; height: 290px;" allowfullscreen></iframe>
-            </div>
+              </div>
 
           </div>
 
@@ -719,7 +716,7 @@ if (empty($errors)) {
 
           <div class="col-lg-3 col-md-6 footer-links">
             <h4>Our Social Networks</h4>
-            <p>Cras fermentum odio eu feugiat lide par naso tierra videa magna derita valies</p>
+            
             <div class="social-links mt-3">
               <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
               <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
